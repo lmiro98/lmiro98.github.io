@@ -74,7 +74,7 @@ html {
     border-bottom: 1px solid lightgrey;
   }
   
-  .job ul {
+  .job ol {
     margin-left: 20px;
     list-style-type: disc;
   }
