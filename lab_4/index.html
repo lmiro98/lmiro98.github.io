@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Leon's Lab 4</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Prof A's Demo Page</div>
+        <button class="button" onclick="clickMe()">
+          Click me to make a change
+        </button>
+        <div class="content">
+          <p>
+            Retro fam narwhal hoodie meggings viral bushwick yr chartreuse.
+            Chartreuse seitan banh mi selfies, woke ennui venmo craft beer. Air
+            plant tumeric retro DIY iPhone poutine. +1 gastropub chillwave,
+            cronut glossier pork belly tacos poke next level fanny pack vegan
+            jianbing lo-fi.
+          </p>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+    <script>
+      function clickMe() {
+        const name = "Leon Miro"
+        const first = name.substr(0,4);
+        const last = name.substr(5,4);
+        const len = first.length + last.length;
+        const heading = document.querySelector(".header");
+        heading.innerHTML = len + name + "'s Lab 4 ";
+        const content = document.querySelector(".content");
+        const p1 = "<p class='h1'>My name has " + name.length + " characters</p>";
+        const p2 = "<p class='h2'>The third letter in my name is "
+          + name.substr(2,1).toUpperCase() + "<br>" +  name.substr(6,3) + "</p>";
+        content.innerHTML = p1 + p2;
+      }
+    </script>
+  </body>
+</html>
