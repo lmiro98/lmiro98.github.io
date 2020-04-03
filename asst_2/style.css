@@ -1,16 +1,26 @@
 h1 {
   font-family: helvetica, arial, sans-serif;
   text-align: center;
+  color: #3C404D;
+}
+
+h2 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  color: #3C404D;
 }
 
 body {
   width: 640px;
   margin: 0 auto;
+  background-color: #627ECC;
 }
 
 .full-img {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 640px;
   height: 480px;
 }
@@ -26,7 +36,7 @@ body {
 
 button {
   border: 0;
-  background: rgba(150,150,150,0.6);
+  background: rgba(60, 64, 77, 0.5);
   text-shadow: 1px 1px 1px white;
   border: 1px solid #999;
   position: absolute;
