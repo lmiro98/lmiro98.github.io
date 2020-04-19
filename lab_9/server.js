@@ -58,7 +58,8 @@ function processDataForFrontEnd(req, res) {
     })
     .then((data) => {
       console.log(data);
-      res.send({ data: data }); // here's where we return data to the front end
+      res.send({ data: data });
+      console.log(data); // here's where we return data to the front end
     })
     .catch((err) => {
       console.log(err);

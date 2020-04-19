@@ -21,6 +21,7 @@
     fetch('./api')
       .then((response) => response.json())
       .then((results) => {
+        console.log(results.data);
         const chart = new CanvasJS.Chart('chartContainer', {
           animationEnabled: true,
 
